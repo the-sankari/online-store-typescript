@@ -1,9 +1,19 @@
-import "./App.css";
+// import "./App.css";
+import StoreNavbar from "./component/StoreNavbar";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import List from "./component/List";
 
 function App() {
-  return <div>
-    App Will be here
-  </div>;
+  return (
+    <div >
+      <StoreNavbar />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<List />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
+  );
 }
 
 export default App;
