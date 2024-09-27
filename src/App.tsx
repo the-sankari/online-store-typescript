@@ -1,4 +1,4 @@
-// import "./App.css";
+import "./App.css";
 import StoreNavbar from "./component/StoreNavbar";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import List from "./component/List";

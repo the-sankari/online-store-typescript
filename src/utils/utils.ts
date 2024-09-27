@@ -9,3 +9,9 @@ export const calculateTotalOfProducts = (products: Product[]) => {
   });
   return parseFloat(total.toFixed(2));
 };
+
+export const reversedStrinFunction = (str: string) => {
+  return str.split("").reverse().join("").toUpperCase();
+};
+
+console.log(reversedStrinFunction("Hello")); 
