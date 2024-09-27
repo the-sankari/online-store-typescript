@@ -1,50 +1,47 @@
-# React + TypeScript + Vite
+# Online Store Typescript
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Prjoect overview
 
-Currently, two official plugins are available:
+This is a simple online store application built with Typescript, React, and Redux. The application allows
+users to browse products, add products to cart, and checkout.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- User authentication
+- Product browsing
+- Product details
+- Add to cart
+- Checkout
+- Payment gateway integration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Technologies used
 
-- Configure the top-level `parserOptions` property like this:
+- Typescript
+- React
+- Redux
+- React Bootstrap
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Setup
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+To run the application, follow these steps:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+1. Clone the repository
+2. Run `npm install` to install dependencies
+3. Run `npm start` to start the application
+4. Open `http://localhost:3000` in your browser to access the application
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Usage
+
+- User authentication:
+- Register: Click on the "Register" button on the top right corner of the page.
+- Login: Click on the "Login" button on the top right corner of the page.
+- Product browsing:
+- Browse products: Click on the "Products" tab on the top navigation bar.
+- Product details:
+- View product details: Click on a product to view its details.
+- Add to cart:
+- Add product to cart: Click on the "Add to Cart" button on the product details page
+- Checkout:
+- Checkout: Click on the "Checkout" button on the cart page
+- Payment gateway integration:
+- Make payment: Fill in the payment details and click on the "Pay" button
